@@ -174,9 +174,9 @@ The first time the files are 'cleaned' or 'created' a `.txt` file will automatic
 - Uncommenting and running the snippet of code entitled `create version files` will prompt the user to answer if they are creating an updated version of the data set, and if so, if the version is a `major`, `minor`, or `patch` update. 
 
 - [`create_dryad_file()`](code/survey_archive/create_dryad_file.R) will then create .csv files of (1) plot descriptors and (2) the survey data that were archived in Dryad (NB: The demographic data file uploaded to Dryad excludes some of the redundant plot identification codes and the x-y coordinates of individual plants). The function generating and saving these files is found in the folder [`code/survey_archive`](code/survey_archive), as is the [`create_version_file.R`](code/survey_archive/create_version_file.R) script used toupdate the `version_info.txt` file.
-<!---
+
 (Table 2 in Bruna et al., _Ecology_) 
---->
+
 - These resulting .csv files are saved to the folder `data/survey_archive`.  
 
 ## Improvements, Suggestions, & Questions
@@ -192,11 +192,11 @@ We welcome any suggestions for package improvement or ideas for features to incl
 
 Please cite both the Data Paper and Dryad Repository when using these data for research, publications, teaching, etc.
 
-<!---
+
 Bruna, Emilio M. et al. (2023), Data from: Demography of the understory herb _Heliconia acuminata_ in an experimentally fragmented tropical landscape, Dryad, Dataset, https://doi.org----
 
 Bruna, Emilio M. María Uriarte, Maria Rosa Darrigo, Paulo Rubim, Cristiane F. Jurinitz, Eric R. Scott, Osmaildo Ferreira da Silva, & W. John Kress. 2023. Demography of the understory herb _Heliconia acuminata_ in an experimentally fragmented tropical landscape. Ecology XX(XX):xx-xx.
---->
+
 
 If you wish to cite this repository, please cite as follows:
 

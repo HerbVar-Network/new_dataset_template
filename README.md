@@ -8,6 +8,99 @@
   - automatic versioning after corrections & saving txt file of `clean_data ` with version no. 
 - Renv for package versions?
 
+# PROJECT NAME
+
+## Repository Overview
+
+
+**This repository includes the following:**
+
+1. **R Code** used to:
+    - process raw data files and correct / make changes to individual records [(`code/data_cleaning`)](code/data_cleaning)
+    - review the clean data for anomalies, unusual records for review, etc. [(`code/data_review`)](code/data_review)
+    - prepare the version of the data to be archived at Dryad [(`code/data_archive`)](code/data_archive)
+    - prepare figures for the data summaries and publications  [(`code/figures`)](code/figures)
+    
+2. **Data:**
+    - .csv files of raw data [(`data/survey_raw`)](data/data_raw)
+    - .csv files of clean data [(`data/survey_clean`)](data/data_clean)
+    
+3. [**Data validation algorithms and their output**](https://---.github.io/---/survey_validation.html) algorithms 
+
+4. [**Summaries of the data**](https://---.github.io/---/data_overview.html) 
+
+5. [**A log of updates and corrections**](NEWS.md).
+
+6. **Methodological information and records**, including: 
+    - scanned copies of the [original datasheets](docs/survey_datasheets/survey_datasheets.md), 
+ 
+
+## Workflow
+
+### STEP 1. Correct, organize, & review the data with `01_clean_survey_data.R`
+
+**Code:** 
+
+**Output:** 
+
+**File Versioning**: To ensure reproducibility, users must know the precise version of a data set they used in their analyses. Below each function is a snippet of code entitled `create version files`; uncommenting and running this code will create or update the file recording the version number of the file being created (see ['Frictionless Standards'](https://specs.frictionlessdata.io/patterns/#data-package-version)).  
+
+The first time the files are 'cleaned' or 'created' a `.txt` file will automatically be created assigning the version number `1.0.0` with the date of file creation. If a file already exists, the user will be asked if the file being created is an updated version. 'N' will execute the code without changing the version number or date; 'Y' will trigger a follow-up question of whether the new version is a `major`, `minor`, or `patch` update. The version number will be appriopriately incremented by 1 (e.g., major: 1.0.0 -> 2.0.0, minor: 1.0.0 -> 1.1.0, patch: 1.0.0 -> 1.0.1). 
+
+- _[NB: this was automated but is temporarily manual to allow automated validation, see [details here](https://github.com/BrunaLab/HeliconiaSurveys/issues/41)]_.
+
+**Data Validation & Review:** 
+
+- The functions for this review are in the folder [`code/survey_review`](code/survey_review). 
+
+- These and other validations are also carried out using the [`pointblank`](https://rich-iannone.github.io/pointblank/) package; ***The output of the data validation process suggesting records for review is*** [***here***](https://brunalab.github.io/HeliconiaSurveys/survey_validation/survey_validation.html).
+
+
+
+### STEP 2. Prepare the files for archiving at Dryad with `02_create_survey_archive.R`.
+
+**Code: **[`02_create_survey_archive.R`](/02_create_survey_archive.R) will prepare the version of the 'clean' survey data and file of plot descriptors that are archived in Dryad. 
+
+- Uncommenting and running the snippet of code entitled `create version files` will prompt the user to answer if they are creating an updated version of the data set, and if so, if the version is a `major`, `minor`, or `patch` update. 
+
+
+## Improvements, Suggestions, & Questions
+
+We welcome any suggestions for package improvement or ideas for features to include in future versions. If you have Issues, Feature Requests and Pull Requests, [here is how to contribute](CONTRIBUTING.md). We expect everyone contributing to the package to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Contributors
+
+-   [Emilio M. Bruna](https://github.com/embruna), University of Florida
+-   
+
+## Citation
+
+Please cite both the Data Paper and Dryad Repository when using these data for research, publications, teaching, etc.
+
+<!---
+Bruna, Emilio M. et al. (2023), Data from: Demography of the understory herb _Heliconia acuminata_ in an experimentally fragmented tropical landscape, Dryad, Dataset, https://doi.org----
+
+Bruna, Emilio M. María Uriarte, Maria Rosa Darrigo, Paulo Rubim, Cristiane F. Jurinitz, Eric R. Scott, Osmaildo Ferreira da Silva, & W. John Kress. 2023. Demography of the understory herb _Heliconia acuminata_ in an experimentally fragmented tropical landscape. Ecology XX(XX):xx-xx.
+--->
+
+If you wish to cite this repository, please cite as follows:
+
+
+
+@misc{BrunaSurveys2023,  
+  author = {Bruna, E.M., Eric R. Scott},  
+  title = {Heliconia Demography Project},  
+  year = {2023},  
+  publisher = {GitHub},  
+  journal = {GitHub repository},  
+  note = {data v1.0.0.},  
+  url={https://github.com/BrunaLab/HeliconiaSurveys}  
+}  
+
+___
+
+<!--- EXAMPLE OF WHAT THE README FOR A NEW DATA CLEANUP PROJECT WILL LOOK LIKE
+
 # Heliconia Demography Project
 
 ## Repository Overview
@@ -120,3 +213,4 @@ If you wish to cite this repository, please cite as follows:
   note = {data v1.0.0.},  
   url={https://github.com/BrunaLab/HeliconiaSurveys}  
 }  
+--->

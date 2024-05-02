@@ -59,7 +59,7 @@ The first time the files are 'cleaned' or 'created' a `.txt` file will automatic
 
 ### STEP 2. Prepare the files for archiving at Dryad with `02_create_survey_archive.R`.
 
-**Code: **[`02_create_survey_archive.R`](/02_create_survey_archive.R) will prepare the version of the 'clean' survey data and file of plot descriptors that are archived in Dryad. 
+**Code: **[`02_create_survey_archive.R`](/02_create_survey_archive.R) will prepare the version of the 'clean' survey data and file of plot descriptors that are archived in Dryad.  
 
 - Uncommenting and running the snippet of code entitled `create version files` will prompt the user to answer if they are creating an updated version of the data set, and if so, if the version is a `major`, `minor`, or `patch` update. 
 
@@ -71,7 +71,7 @@ We welcome any suggestions for package improvement or ideas for features to incl
 ## Contributors
 
 -   [Emilio M. Bruna](https://github.com/embruna), University of Florida
--   
+  
 
 ## Citation
 

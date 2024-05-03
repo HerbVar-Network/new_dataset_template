@@ -1,3 +1,14 @@
 # R SCRIPT FOR DATASET CLEANUP
 
-# Additional info (author name, date, sections, etc, to be added
+
+# code overview -----------------------------------------------------------
+
+# description of code authors and purpose
+
+# load packages -----------------------------------------------------------
+library(tidyverse)
+
+
+# load data ---------------------------------------------------------------
+
+# direct read of data and version number from repo, the save locally

@@ -6,7 +6,10 @@
 - Github actions: 
   - data validation with pointblank
   - automatic versioning after corrections & saving txt file of `clean_data ` with version no. 
-- Renv for package versions?
+
+- More advanced, Maybe be overkill for most uses:
+    - Renv for package versions?
+    - Use `targets` to manage project workflow? 
 
 # PROJECT NAME
 

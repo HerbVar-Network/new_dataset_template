@@ -4,17 +4,18 @@ This is the structure of the template. After setting it up, replace the text in 
 A sample README can be found at https://github.com/BrunaLab/HeliconiaSurveys  
 
 
-project
+new_dataset_template  
+
 |- code/                # Folder for R code   
 |  +- data_cleaner.R    # R script for loading, cleaning, and organizing dataset  
-| 
-|- data/                # 
-|  +- data_clean/       # folder for clean data files in open formats such as TXT, CSV, TSV, etc.  
-|  +- data_raw/          # folder for raw data not changed once created  
-|      +- my_data.csv    # data files in open formats such as TXT, CSV, TSV, etc. Do not change these files directly   
-|  
-|- docs/  
-|  +- docs.md            # documentation for the R files  
+|   
+|- data/                #   
+|  +- data_clean/       # folder for clean data files in open formats such as TXT, CSV, TSV, etc.   
+|  +- data_raw/         # folder for raw data not changed once created   
+|      +- my_data.csv   # data files in open formats such as TXT, CSV, TSV, etc. Do not change these files directly    
+|   
+|- docs/                #
+|  +- docs.md           # documentation for the R files  
 |  
 |- CODE_OF_CONDUCT.md    # code of conduct for collaborators and contributors  
 |- CONTRIBUTING.md       # information on how to suggest improvements to the code  

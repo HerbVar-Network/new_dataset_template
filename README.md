@@ -12,27 +12,25 @@ new_dataset_template
 |- data/                  #   
 |    +- data_clean/       # folder for the clean data files in open formats (.txt, .csv).
 |    +- data_raw/         # folder for raw data not changed once created    
-|        +- my_data.csv   # data files in open formats (.txt, .csv). Do not modify these files directly,.   
+|        +- my_data.csv   # data files in open formats (.txt, .csv). Do not modify these directly.   
 |   
 |- docs/                  # Folder for metadata
-|    +- docs.md           # metadata describing the content and structure of the clean data files 
+|    +- docs.md           # file describing content & structure of clean data files 
 |  
 |- CODE_OF_CONDUCT.md     # code of conduct for collaborators and contributors  
 |- CONTRIBUTING.md        # information on how to suggest improvements to the code  
 |- LICENSE.md             # specifies the conditions of use and reuse of the code, data & text  
 |- NEWS.md                # details updates, version status, and other milestones  
 |- README.md              # top-level description of content and guide to users  
-|- makefile.R             # file to execute the cleaning and organizing of data using scripts in the `code` folder  
+|- makefile.R             # file to execute data cleaning & organizing using scripts in `code` folder  
 </pre>
 
-How to use
-----------
+### How to use
 
 * Create a new repository for your project using this as a template
 * Open the README and edit it the title.
 
-Key Ideas 
-----------------------
+### Key Concepts 
 
 This template structure is based on [Noble 2009](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424). Fundamental to this approach is:
 
@@ -43,7 +41,7 @@ This template structure is based on [Noble 2009](https://journals.plos.org/plosc
 * There is a top-level `makefile` that documents the computational study in executable form. Those files may call out to other .R scripts in the `code` folder.
 * There is a metadata file describing all input and output data files.
 
-#### TO ADD:
+### TO ADD:
 
 - Github actions: 
   - data validation with pointblank
@@ -52,3 +50,6 @@ This template structure is based on [Noble 2009](https://journals.plos.org/plosc
 - More advanced, likely overkill:
     - `Renv` for package versions
     - `targets` to manage project workflow.
+
+
+Inspired by R packages [`starters`](https://itsalocke.com/starters/), [`rrrpkg`](https://github.com/ropensci/rrrpkg), [`template`](https://github.com/Pakillo/template?tab=readme-ov-file), and [`rr-init`](https://github.com/Reproducible-Science-Curriculum/rr-init?tab=readme-ov-file).

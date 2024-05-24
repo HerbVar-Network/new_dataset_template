@@ -1,27 +1,30 @@
 # DataSet Cleanup Updates
 
-## 24 April 2024
+<!--example begins-->
 
-### Corrections
+<!-- ## 24 April 2024-->
 
-- the reproductive status of two plants and updated version numbers (0.9.1)  
+<!-- ### Corrections-->
 
-### Enhancements
+<!-- -   the reproductive status of two plants and updated version numbers (0.9.1)-->
 
-- autosave of mydata_clean.csv after making any corrections using github actions.
+<!-- ### Enhancements-->
 
+<!-- -   autosave of mydata_clean.csv after making any corrections using github actions.-->
 
-## 1 April 2024  
+<!-- ## 1 April 2024-->
 
-### new version of `data_clean` (0.9.0) 
+<!-- ### new version of `data_clean` (0.9.0)-->
 
- - mydata_clean.csv
+<!-- -   mydata_clean.csv-->
 
-## 1 January 2024  
+<!-- ## 1 January 2024-->
 
-### Corrections  
+<!-- ### Corrections-->
 
-- ongoing review and clean-up (0.5.0)  
-  
-  - mydata_clean.csv 
-  - herbivore_id.csv
+<!-- -   ongoing review and clean-up (0.5.0)-->
+
+   <!-- -   mydata_clean.csv-->
+   <!-- -   herbivore_id.csv-->
+
+<!--example ends-->

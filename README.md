@@ -1,4 +1,4 @@
-## TEMPLATE FOR CLEANUP& ORGANIZATION OF _NEW_ HERBVAR DATASET
+## TEMPLATE: Cleanup of _NEW_ HerbVar Dataset
 
 This is the structure of the template. After setting it up, replace the text in the README with informartion specific to your dfata cleanup project.
 A sample README can be found at https://github.com/BrunaLab/HeliconiaSurveys  

@@ -1,4 +1,4 @@
-TEMPLATE: NEW DATASET CLEANUP AND MANAGEMENT
+## TEMPLATE FOR CLEANUP& ORGANIZATION OF _NEW_ HERBVAR DATASET
 
 This is the structure of the template. After setting it up, replace the text in the README with informartion specific to your dfata cleanup project.
 A sample README can be found at https://github.com/BrunaLab/HeliconiaSurveys  
@@ -51,5 +51,5 @@ This template structure is based on [Noble 2009](https://journals.plos.org/plosc
     - `Renv` for package versions
     - `targets` to manage project workflow.
 
-
+----- 
 Inspired by R packages [`starters`](https://itsalocke.com/starters/), [`rrrpkg`](https://github.com/ropensci/rrrpkg), [`template`](https://github.com/Pakillo/template?tab=readme-ov-file), and [`rr-init`](https://github.com/Reproducible-Science-Curriculum/rr-init?tab=readme-ov-file).
